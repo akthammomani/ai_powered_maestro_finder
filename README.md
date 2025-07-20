@@ -6,6 +6,7 @@
 </p>
 
 This project is a part of Neural Networks and Deep Learning (AAI-511-02) course in [the Applied Artificial Intelligence Master Program](https://onlinedegrees.sandiego.edu/masters-applied-artificial-intelligence/) at [the University of San Diego (USD)](https://www.sandiego.edu/). 
+
 -- Project Status: Ongoing
 
 ## **Introduction**
