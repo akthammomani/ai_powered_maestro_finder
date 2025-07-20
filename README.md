@@ -6,7 +6,7 @@ This project is a part of Neural Networks and Deep Learning (AAI-511-02) course 
 ## **Introduction**
 
 **AI‑Powered Maestro Finder** is a lightweight web app that can name the composer behind a piece of classical music in seconds.  
-Upload a MIDI file—or record a short audio snippet—and the app returns the most likely maestro (Bach, Beethoven, Chopin, or Mozart) along with confidence scores and a quick piano‑roll visual. Think of it as "Shazam for classical composers", built entirely on symbolic‑music AI.
+Upload a MIDI file—or record a short audio snippet and the app returns the most likely maestro (Bach, Beethoven, Chopin, or Mozart) along with confidence scores and a quick piano‑roll visual. Think of it as "Shazam for classical composers", built entirely on symbolic‑music AI.
 
 ## **Objective**
 
