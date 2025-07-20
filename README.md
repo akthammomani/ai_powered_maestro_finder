@@ -1,8 +1,4 @@
 # **AI-Powered Maestro Finder**
-![Image](https://github.com/user-attachments/assets/fd53a6fb-6c1b-4f75-915d-2e727dc322c4)
-
-<img src="https://github.com/user-attachments/assets/fd53a6fb-6c1b-4f75-915d-2e727dc322c4" alt="Image" width="80%">
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/fd53a6fb-6c1b-4f75-915d-2e727dc322c4"
        alt="Image"
