@@ -1,33 +1,22 @@
 <p align="left">
-  <!-- Python / Frameworks -->
+  <!-- Runtime / DL stack -->
   <img alt="Python" src="https://img.shields.io/badge/python-3.9%2B-blue">
   <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow&logoColor=white">
-  <img alt="Keras Tuner" src="https://img.shields.io/badge/Keras%20Tuner-enabled-E00000?logo=keras&logoColor=white">
+  <img alt="Keras (tf.keras)" src="https://img.shields.io/badge/Keras-tf.keras-E00000?logo=keras&logoColor=white">
+  <img alt="Keras Tuner" src="https://img.shields.io/badge/Keras%20Tuner-enabled-E00000">
+
+  <!-- Audio->MIDI + App -->
   <img alt="Basic Pitch" src="https://img.shields.io/badge/Basic%20Pitch-ONNX-4A90E2">
   <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-app-FF4B4B?logo=streamlit&logoColor=white">
 
-  <!-- Quality / Style (optional) -->
+  <!-- Frontend / style -->
+  <img alt="CSS" src="https://img.shields.io/badge/Frontend-CSS-2965F1?logo=css3&logoColor=white">
   <img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg">
-  <!-- If you add CI later, switch these on:
-  <img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/YOUR_USER/YOUR_REPO/tests.yml?label=tests">
-  <img alt="Coverage" src="https://img.shields.io/codecov/c/github/YOUR_USER/YOUR_REPO?logo=codecov">
-  -->
 
-  <!-- Model / Demo -->
-  <img alt="Model accuracy" src="https://img.shields.io/badge/CNN%20accuracy-98.4%25-brightgreen">
-  <!-- If you host the app, add your URL here -->
-  <!-- <a href="https://YOUR-STREAMLIT-APP-URL">
-    <img alt="Demo" src="https://img.shields.io/badge/demo-streamlit.cloud-0A0A0A?logo=streamlit">
-  </a> -->
-
-  <!-- Notebooks -->
-  <a href="https://colab.research.google.com/drive/REPLACE_WITH_DATA_WRANGLING_COLAB_ID">
-    <img alt="Colab: Data wrangling" src="https://img.shields.io/badge/Colab-Data%20wrangling-F9AB00?logo=googlecolab&logoColor=white">
-  </a>
-  <a href="https://colab.research.google.com/drive/REPLACE_WITH_CNN_COLAB_ID">
-    <img alt="Colab: CNN modeling" src="https://img.shields.io/badge/Colab-CNN%20modeling-F9AB00?logo=googlecolab&logoColor=white">
-  </a>
+  <!-- Model metric -->
+  <img alt="CNN accuracy" src="https://img.shields.io/badge/CNN%20accuracy-98.4%25-brightgreen">
 </p>
+
 
 
 
