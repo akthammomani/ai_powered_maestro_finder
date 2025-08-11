@@ -25,6 +25,12 @@
   <img src="assets/images/logo.png" alt="AI-Powered Maestro Finder logo" width="80%">
 </p
 
+<p align="center">
+  <a href="https://github.com/USER/REPO">
+    <img src="assets/images/logo.png" alt="AI-Powered Maestro Finder logo" width="320">
+  </a>
+</p>
+
 <!-- percentage of container -->
 <img src="assets/images/logo.png" alt="Logo" width="60%">
 
