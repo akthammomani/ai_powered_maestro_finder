@@ -21,9 +21,9 @@ Upload a **MIDI** file or **record audio**; the app predicts **Bach, Beethoven, 
 
 ---
 
-## pipeline
+## **Pipeline**
 
-app.py
+```text
 utils/
   inference.py          # load model + predict_composer()
   audio_utils.py        # audio -> MIDI (Basic Pitch, sanity checks)
@@ -33,6 +33,7 @@ utils/
 assets/images/          # UI images
 style.css               # optional custom styles
 model/best_cnn.keras    # trained CNN
+```
 
 
 
