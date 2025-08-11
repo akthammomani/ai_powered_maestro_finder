@@ -4,7 +4,9 @@ A fast, lightweight **Streamlit** app that identifies the composer of a classica
 Upload a **MIDI** file or **record audio**; the app predicts **Bach, Beethoven, Chopin, or Mozart**, and shows confidence bars, a piano-roll, and optional sheet-music preview.
 
 <p align="center">
-  <img src="assets/hero_screenshot.png" alt="App screenshot" width="800"/>
+  <img src="https://github.com/user-attachments/assets/fd53a6fb-6c1b-4f75-915d-2e727dc322c4"
+       alt="Image"
+       width="80%">
 </p>
 
 ---
