@@ -22,7 +22,7 @@
 # **AI-Powered Maestro Finder** [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_red.svg)](https://ai-powered-maestro-finder.streamlit.app//)
 
 <div align="center">
-  <img src="assets/images/logo.png" alt="Logo" width="60%">
+  <img src="assets/images/logo.png" alt="Logo" width="40%">
 </div>
 
 This project is a part of Neural Networks and Deep Learning (AAI-511-02) course in [the Applied Artificial Intelligence Master Program](https://onlinedegrees.sandiego.edu/masters-applied-artificial-intelligence/) at [the University of San Diego (USD)](https://www.sandiego.edu/). 
