@@ -11,7 +11,6 @@
 
   <!-- Frontend / style -->
   <img alt="CSS" src="https://img.shields.io/badge/Frontend-CSS-2965F1?logo=css3&logoColor=white">
-  <img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg">
 
   <!-- Model metric -->
   <img alt="CNN accuracy" src="https://img.shields.io/badge/CNN%20accuracy-98.4%25-brightgreen">
