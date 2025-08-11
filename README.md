@@ -1,12 +1,4 @@
 <p align="left">
-  <!-- Release / Repo -->
-  <a href="https://github.com/YOUR_USER/YOUR_REPO/releases">
-    <img alt="GitHub release" src="https://img.shields.io/github/v/release/YOUR_USER/YOUR_REPO?display_name=tag&sort=semver">
-  </a>
-  <a href="https://github.com/YOUR_USER/YOUR_REPO/blob/main/LICENSE">
-    <img alt="License" src="https://img.shields.io/github/license/YOUR_USER/YOUR_REPO">
-  </a>
-
   <!-- Python / Frameworks -->
   <img alt="Python" src="https://img.shields.io/badge/python-3.9%2B-blue">
   <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow&logoColor=white">
