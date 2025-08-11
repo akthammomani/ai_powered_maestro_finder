@@ -7,27 +7,49 @@
 
 This project is a part of Neural Networks and Deep Learning (AAI-511-02) course in [the Applied Artificial Intelligence Master Program](https://onlinedegrees.sandiego.edu/masters-applied-artificial-intelligence/) at [the University of San Diego (USD)](https://www.sandiego.edu/). 
 
--- Project Status: Ongoing
+-- Project Status: Completed
+
+Lightweight web app that can name the composer behind a classical piano piece in seconds.  
+Upload a MIDI file or record a short audio snippet; the app predicts **Bach, Beethoven, Chopin, or Mozart** and shows clear confidence bars, a piano-roll, and optional sheet-music preview.
 
 ## **Introduction**
 
-**AI‑Powered Maestro Finder** is a lightweight web app that can name the composer behind a piece of classical music in seconds.  
-Upload a MIDI file or record a short audio snippet and the app returns the most likely maestro (Bach, Beethoven, Chopin, or Mozart) along with confidence scores and a quick piano‑roll visual. Think of it as "Shazam for classical composers", built entirely on symbolic‑music AI.
+**AI-Powered Maestro Finder** turns symbolic music into quick, explainable predictions. It’s a complete pipeline—from raw MIDIs to trained models to an interactive Streamlit app—built to be readable, reproducible, and easy to extend.
 
 ## **Objective**
 
-* Make composer recognition accessible to students, musicians, and curious listeners.  
-* Demonstrate an end‑to‑end ML pipeline: data wrangling &rarr; augmentation &rarr; feature extraction &rarr; deep‑learning Models &rarr; friendly UI.  
-* Provide a clean template that others can extend with more composers or new classification tasks (style, period, instrument).
+- Make composer recognition accessible to students, musicians, and curious listeners.
+- Demonstrate an end-to-end ML workflow:
+  data wrangling → augmentation → feature extraction → modeling → friendly UI.
+- Provide a clean template you can extend with new composers or tasks (style, period, instrument).
+
+## Features
+
+- **Upload MIDI** or **record audio** (auto-transcribed to MIDI with Basic Pitch).
+- **Confidence bars** and **piano-roll** visualization.
+- **Optional sheet-music view** (MusicXML rendered via OpenSheetMusicDisplay).
+- **On-device inference** using a compact CNN.
+- Clear, modular code: `utils/` for I/O, features, inference, and visualization.
 
 ## **Methods**
 
 | Stage | Key steps |
-|-------|-----------|
-| **Data wrangling** | Deduplicated and cleaned ~1.6 k raw MIDI files; fixed note overlaps, trimmed out‑of‑range pitches, removed empty tracks. |
-| **Class balancing** | Pitch‑shift, time‑stretch, and velocity‑jitter on minority classes to reach &asymp; 1 k files per composer. |
-| **Feature extraction** | *Two parallel views*  <br> 1. **Piano‑rolls** (88 pitches × 512 time frames) for a CNN.  <br> 2. **Event tokens** (note‑on/off + time‑shift) for an LSTM. |
-| **Modeling** | Trained a CNN on piano‑roll "images" and an LSTM on token sequences; final prediction is the average of both softmax outputs. |
-| **Inference pipeline** | MIDI upload &rarr; features on‑the‑fly &rarr; ensemble &rarr; probabilities.  <br> Live audio passes through BasicPitch to extract notes before the same pipeline. |
-| **Front‑end** | Streamlit app shows top‑3 composers, confidence bar chart, and a mini piano‑roll preview for context. |
+|------|-----------|
+| **Data wrangling** | De-duplicate and clean raw MIDIs; trim to piano range (A0–C8); remove empty or corrupted tracks. |
+| **Class balancing** | Pitch-shift, time-stretch, and velocity-jitter minority classes to balance counts. |
+| **Feature extraction** | Two parallel views: (1) **Piano-roll** 88×512 @ 8 fps for CNN, (2) **Event tokens** for LSTM (used for research and comparison). |
+| **Modeling** | Train **CNN** on piano-rolls and **LSTM** on sequences; evaluate both. |
+| **Final selection** | **CNN** chosen for the app based on accuracy, stability, and speed. |
+| **Inference** | MIDI → piano-roll → CNN → probabilities. For audio, run Basic Pitch → MIDI → same pipeline. |
+| **Front end** | Streamlit UI with confidence bars, piano-roll, and optional sheet music. |
+
+## **Results (test split)**
+
+| Model | Input window | Accuracy | Macro F1 |
+|------|--------------|----------|----------|
+| **CNN** | Piano-roll 88 × 512 | **0.984** | **0.984** |
+| LSTM | Piano-roll 88 × 512 | 0.830 | 0.832 |
+
+**Takeaway:** with piano-roll inputs, the CNN's inductive bias (2D convs over time×pitch + residuals + SE) aligns better with musical texture and converges faster.  
+We use the **CNN** as the production model in the app.
 
