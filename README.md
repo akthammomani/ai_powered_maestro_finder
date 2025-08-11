@@ -1,4 +1,4 @@
-# **AI-Powered Maestro Finder**
+# **AI-Powered Maestro Finder** [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_red.svg)](https://ai-powered-maestro-finder.streamlit.app//)
 <p align="center">
   <img src="https://github.com/user-attachments/assets/fd53a6fb-6c1b-4f75-915d-2e727dc322c4"
        alt="Image"
