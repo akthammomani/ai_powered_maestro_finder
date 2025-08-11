@@ -1,3 +1,44 @@
+<p align="left">
+  <!-- Release / Repo -->
+  <a href="https://github.com/YOUR_USER/YOUR_REPO/releases">
+    <img alt="GitHub release" src="https://img.shields.io/github/v/release/YOUR_USER/YOUR_REPO?display_name=tag&sort=semver">
+  </a>
+  <a href="https://github.com/YOUR_USER/YOUR_REPO/blob/main/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/YOUR_USER/YOUR_REPO">
+  </a>
+
+  <!-- Python / Frameworks -->
+  <img alt="Python" src="https://img.shields.io/badge/python-3.9%2B-blue">
+  <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow&logoColor=white">
+  <img alt="Keras Tuner" src="https://img.shields.io/badge/Keras%20Tuner-enabled-E00000?logo=keras&logoColor=white">
+  <img alt="Basic Pitch" src="https://img.shields.io/badge/Basic%20Pitch-ONNX-4A90E2">
+  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-app-FF4B4B?logo=streamlit&logoColor=white">
+
+  <!-- Quality / Style (optional) -->
+  <img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg">
+  <!-- If you add CI later, switch these on:
+  <img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/YOUR_USER/YOUR_REPO/tests.yml?label=tests">
+  <img alt="Coverage" src="https://img.shields.io/codecov/c/github/YOUR_USER/YOUR_REPO?logo=codecov">
+  -->
+
+  <!-- Model / Demo -->
+  <img alt="Model accuracy" src="https://img.shields.io/badge/CNN%20accuracy-98.4%25-brightgreen">
+  <!-- If you host the app, add your URL here -->
+  <!-- <a href="https://YOUR-STREAMLIT-APP-URL">
+    <img alt="Demo" src="https://img.shields.io/badge/demo-streamlit.cloud-0A0A0A?logo=streamlit">
+  </a> -->
+
+  <!-- Notebooks -->
+  <a href="https://colab.research.google.com/drive/REPLACE_WITH_DATA_WRANGLING_COLAB_ID">
+    <img alt="Colab: Data wrangling" src="https://img.shields.io/badge/Colab-Data%20wrangling-F9AB00?logo=googlecolab&logoColor=white">
+  </a>
+  <a href="https://colab.research.google.com/drive/REPLACE_WITH_CNN_COLAB_ID">
+    <img alt="Colab: CNN modeling" src="https://img.shields.io/badge/Colab-CNN%20modeling-F9AB00?logo=googlecolab&logoColor=white">
+  </a>
+</p>
+
+
+
 # **AI-Powered Maestro Finder** [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_red.svg)](https://ai-powered-maestro-finder.streamlit.app//)
 <p align="center">
   <img src="https://github.com/user-attachments/assets/fd53a6fb-6c1b-4f75-915d-2e727dc322c4"
