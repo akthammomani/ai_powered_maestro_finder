@@ -20,15 +20,13 @@
 
 
 # **AI-Powered Maestro Finder** [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_red.svg)](https://ai-powered-maestro-finder.streamlit.app//)
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/fd53a6fb-6c1b-4f75-915d-2e727dc322c4"
-       alt="Image"
-       width="80%">
-</p>
 
 <p align="center">
   <img src="assets/images/logo.png" alt="AI-Powered Maestro Finder logo" width="80%">
 </p
+
+<!-- percentage of container -->
+<img src="assets/images/logo.png" alt="Logo" width="60%">
 
 This project is a part of Neural Networks and Deep Learning (AAI-511-02) course in [the Applied Artificial Intelligence Master Program](https://onlinedegrees.sandiego.edu/masters-applied-artificial-intelligence/) at [the University of San Diego (USD)](https://www.sandiego.edu/). 
 
