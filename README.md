@@ -42,9 +42,6 @@ This project is a part of Neural Networks and Deep Learning (AAI-511-02) course 
 
 -- Project Status: Completed
 
-Lightweight web app that can name the composer behind a classical piano piece in seconds.  
-Upload a MIDI file or record a short audio snippet; the app predicts **Bach, Beethoven, Chopin, or Mozart** and shows clear confidence bars, a piano-roll, and optional sheet-music preview.
-
 ## **Introduction**
 
 **AI-Powered Maestro Finder** turns symbolic music into quick, explainable predictions. It’s a complete pipeline—from raw MIDIs to trained models to an interactive Streamlit app—built to be readable, reproducible, and easy to extend.
