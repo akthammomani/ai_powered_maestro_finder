@@ -1,4 +1,3 @@
-
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -50,7 +49,24 @@ def extract_best_512(pm: pretty_midi.PrettyMIDI, fs: int = 8, window: int = 512)
     out[:, :min(T, window)] = roll[:, :window]      # left crop/pad
     return out
 
+def piano_likeness_flags(pm_obj, fs=8):
+    roll = (pm_obj.get_piano_roll(fs=fs)[21:109, :] > 0).astype(np.uint8)  # (88,T)
+    if roll.size == 0 or roll.shape[1] == 0:
+        return False, ["empty_roll"]
+    notes_per_frame = roll.sum(axis=0)
+    mean_polyphony  = float(notes_per_frame.mean())          # ~1 for singing
+    chord_frames    = float((notes_per_frame >= 3).mean())   # fraction of frames with chords
+    unique_pitches  = int((roll.sum(axis=1) > 0).sum())
+    density         = float(roll.sum() / (roll.shape[0]*roll.shape[1]))
 
+    reasons = []
+    if mean_polyphony < 1.2: reasons.append("mostly_monophonic")
+    if chord_frames   < 0.05: reasons.append("few_chords")
+    if unique_pitches < 8:    reasons.append("very_few_pitches")
+    if density        < 0.01: reasons.append("very_sparse")
+
+    ok = len(reasons) == 0
+    return ok, reasons
 
 
 # ----- PAGE CONFIG + CUSTOM STYLES ----- 
@@ -350,6 +366,16 @@ with main_col:
     
             try:
                 pm = pretty_midi.PrettyMIDI(midi_path)
+
+                # does this look like solo piano?
+                ok, reasons = piano_likeness_flags(pm, fs=8)
+                if not ok:
+                    st.warning(
+                        "This clip doesn’t look like solo piano (likely voice/whistle). "
+                        f"Reasons: {', '.join(reasons)}. Prediction may be unreliable."
+                    )
+                # *stop* here:
+                    st.stop()
     
                 # densest 512 frames, (88,512) in 0..127
                 pr = extract_best_512(pm, fs=10, window=512)
@@ -440,56 +466,3 @@ with st.container():
                 """,
                 unsafe_allow_html=True,
             )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
