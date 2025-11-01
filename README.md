@@ -1,4 +1,4 @@
-<p align="left">
+<p align="center">
   <!-- Runtime / DL stack -->
   <img alt="Python" src="https://img.shields.io/badge/python-3.9%2B-blue">
   <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow&logoColor=white">
